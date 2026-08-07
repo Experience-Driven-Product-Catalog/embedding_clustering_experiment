@@ -1,0 +1,1267 @@
+{
+  "schema_version": "1.0.0",
+  "proposal_type": "dynamic_review_decision_proposal",
+  "proposal_id": "dynamic_review_decision_proposal:20260803-213339:demo-review-52282:3ae64c77edaa",
+  "source": {
+    "experiment": "D",
+    "run_id": "20260803-213339",
+    "created_at_local": "2026-08-03T21:34:00.803380+09:00",
+    "scope": "full_input_datasets",
+    "sampling_used": false,
+    "run_manifest_sha256": "5d0399a024d67b2324c3f35a25561092e0b8045ee5659dd773c1309cdd0a6c6b",
+    "normalization": {
+      "embedding_model_id": "snunlp/KR-SBERT-Medium-extended-klueNLItriplet_PARpair_QApair-klueSTS",
+      "normalization_version": "2026-08-03",
+      "normalization_run_id": "20260803-213339",
+      "normalization_config_sha256": "d9f2bec666c2691d24b56b0205191396a7da1a63e632ef59c29975230f44f232",
+      "mapping_distance_metric": "cosine",
+      "lineage_result_tables": [
+        "experiment_b",
+        "experiment_d"
+      ],
+      "baseline_result_tables": [
+        "experiment_a",
+        "experiment_c"
+      ]
+    },
+    "input_sha256": {
+      "reviews": "53626449590d101d63771318848369b6a3a94a667e6fce010b020adba5e0041f",
+      "opinion_units": "75eb7e63c8f00714c97c4f497f2058e37b4be0d623df9aa873cb66e0fab71738"
+    },
+    "human_evaluation": {
+      "status": "completed",
+      "completed_result_file_count": 3,
+      "results_set_sha256": "444186dc3f29c624f7ce08ea32c9f8245a130ca36586a8dd597c8b651b0d20e3",
+      "evaluator_count": 3
+    }
+  },
+  "submission": {
+    "submission_id": "demo-review-52282",
+    "submitted_at_local": "20260803-213400",
+    "product_name": "SMART 삼성전자 M7 S32BM700",
+    "reviews": [
+      {
+        "submission_review_id": "review_1",
+        "source_review_idx": 52282,
+        "review": "사물인터넷 제어 기능이나 ott바로 재생되는 등 다양한 기능이 많아 좋아요 4k해상도로 매우 선명하지만 색감이나 명암은 살짝 아쉬워요 ui가 살짝 버벅이는 느낌이 들어 이점은 좀 안좋아요 가격대비 제품이 너무 좋아서 가성비 짱인 제품이예요",
+        "opinion_units": [
+          {
+            "raw_aspect": "사물인터넷 제어 기능",
+            "aspect": "사물인터넷 가전 제어",
+            "raw_status": "제공됨",
+            "status": "제공됨",
+            "excerpt": "사물인터넷 제어 기능이나 ott바로 재생되는 등 다양한 기능이 많아 좋아요",
+            "opinion": "사물인터넷 제어 기능이 제공되어 좋음",
+            "sentiment": "positive",
+            "aspect_cluster_id": "D-A-000207",
+            "status_cluster_id": "D-S-000694",
+            "catalog_comparison_eligible": true,
+            "opinion_unit_id": "u1"
+          },
+          {
+            "raw_aspect": "OTT 재생",
+            "aspect": "OTT 재생",
+            "raw_status": "바로 재생 가능",
+            "status": "바로 재생 가능",
+            "excerpt": "사물인터넷 제어 기능이나 ott바로 재생되는 등 다양한 기능이 많아 좋아요",
+            "opinion": "OTT가 바로 재생되어 좋음",
+            "sentiment": "positive",
+            "aspect_cluster_id": "D-A-000018",
+            "status_cluster_id": "D-S-000038",
+            "catalog_comparison_eligible": true,
+            "opinion_unit_id": "u2"
+          },
+          {
+            "raw_aspect": "기능 다양성",
+            "aspect": "기능",
+            "raw_status": "다양함",
+            "status": "다양함",
+            "excerpt": "사물인터넷 제어 기능이나 ott바로 재생되는 등 다양한 기능이 많아 좋아요",
+            "opinion": "다양한 기능이 많아 좋음",
+            "sentiment": "positive",
+            "aspect_cluster_id": "D-A-000067",
+            "status_cluster_id": "D-S-000233",
+            "catalog_comparison_eligible": true,
+            "opinion_unit_id": "u3"
+          },
+          {
+            "raw_aspect": "화면 선명도",
+            "aspect": "화질 선명도",
+            "raw_status": "매우 선명함",
+            "status": "선명함",
+            "excerpt": "4k해상도로 매우 선명하지만 색감이나 명암은 살짝 아쉬워요",
+            "opinion": "4K 해상도로 화면이 매우 선명함",
+            "sentiment": "positive",
+            "aspect_cluster_id": "D-A-000399",
+            "status_cluster_id": "D-S-001237",
+            "catalog_comparison_eligible": true,
+            "opinion_unit_id": "u4"
+          },
+          {
+            "raw_aspect": "색감",
+            "aspect": "색감",
+            "raw_status": "아쉬움",
+            "status": "아쉬움",
+            "excerpt": "4k해상도로 매우 선명하지만 색감이나 명암은 살짝 아쉬워요",
+            "opinion": "색감이 살짝 아쉬움",
+            "sentiment": "negative",
+            "aspect_cluster_id": "D-A-000113",
+            "status_cluster_id": "D-S-000416",
+            "catalog_comparison_eligible": true,
+            "opinion_unit_id": "u5"
+          },
+          {
+            "raw_aspect": "명암",
+            "aspect": "명암",
+            "raw_status": "아쉬움",
+            "status": "아쉬움",
+            "excerpt": "4k해상도로 매우 선명하지만 색감이나 명암은 살짝 아쉬워요",
+            "opinion": "명암이 살짝 아쉬움",
+            "sentiment": "negative",
+            "aspect_cluster_id": "D-A-000133",
+            "status_cluster_id": "D-S-000472",
+            "catalog_comparison_eligible": true,
+            "opinion_unit_id": "u6"
+          },
+          {
+            "raw_aspect": "UI 반응성",
+            "aspect": "UI 반응성",
+            "raw_status": "버벅임",
+            "status": "버벅임",
+            "excerpt": "ui가 살짝 버벅이는 느낌이 들어 이점은 좀 안좋아요",
+            "opinion": "UI가 살짝 버벅이는 느낌이 들어 좋지 않음",
+            "sentiment": "negative",
+            "aspect_cluster_id": "D-A-000026",
+            "status_cluster_id": "D-S-000055",
+            "catalog_comparison_eligible": true,
+            "opinion_unit_id": "u7"
+          },
+          {
+            "raw_aspect": "가성비",
+            "aspect": "가성비",
+            "raw_status": "매우 좋음",
+            "status": "좋음",
+            "excerpt": "가격대비 제품이 너무 좋아서 가성비 짱인 제품이예요",
+            "opinion": "가격 대비 제품이 너무 좋아 가성비가 매우 좋음",
+            "sentiment": "positive",
+            "aspect_cluster_id": "D-A-000035",
+            "status_cluster_id": "D-S-000131",
+            "catalog_comparison_eligible": true,
+            "opinion_unit_id": "u8"
+          }
+        ]
+      }
+    ],
+    "excluded_products": [
+      "SMART 삼성전자 M7 S32BM700"
+    ]
+  },
+  "submitted_opinion_units": [
+    {
+      "submission_review_id": "review_1",
+      "source_review_idx": 52282,
+      "raw_aspect": "사물인터넷 제어 기능",
+      "aspect": "사물인터넷 가전 제어",
+      "raw_status": "제공됨",
+      "status": "제공됨",
+      "excerpt": "사물인터넷 제어 기능이나 ott바로 재생되는 등 다양한 기능이 많아 좋아요",
+      "opinion": "사물인터넷 제어 기능이 제공되어 좋음",
+      "sentiment": "positive",
+      "aspect_cluster_id": "D-A-000207",
+      "status_cluster_id": "D-S-000694",
+      "catalog_comparison_eligible": true,
+      "opinion_unit_id": "u1"
+    },
+    {
+      "submission_review_id": "review_1",
+      "source_review_idx": 52282,
+      "raw_aspect": "OTT 재생",
+      "aspect": "OTT 재생",
+      "raw_status": "바로 재생 가능",
+      "status": "바로 재생 가능",
+      "excerpt": "사물인터넷 제어 기능이나 ott바로 재생되는 등 다양한 기능이 많아 좋아요",
+      "opinion": "OTT가 바로 재생되어 좋음",
+      "sentiment": "positive",
+      "aspect_cluster_id": "D-A-000018",
+      "status_cluster_id": "D-S-000038",
+      "catalog_comparison_eligible": true,
+      "opinion_unit_id": "u2"
+    },
+    {
+      "submission_review_id": "review_1",
+      "source_review_idx": 52282,
+      "raw_aspect": "기능 다양성",
+      "aspect": "기능",
+      "raw_status": "다양함",
+      "status": "다양함",
+      "excerpt": "사물인터넷 제어 기능이나 ott바로 재생되는 등 다양한 기능이 많아 좋아요",
+      "opinion": "다양한 기능이 많아 좋음",
+      "sentiment": "positive",
+      "aspect_cluster_id": "D-A-000067",
+      "status_cluster_id": "D-S-000233",
+      "catalog_comparison_eligible": true,
+      "opinion_unit_id": "u3"
+    },
+    {
+      "submission_review_id": "review_1",
+      "source_review_idx": 52282,
+      "raw_aspect": "화면 선명도",
+      "aspect": "화질 선명도",
+      "raw_status": "매우 선명함",
+      "status": "선명함",
+      "excerpt": "4k해상도로 매우 선명하지만 색감이나 명암은 살짝 아쉬워요",
+      "opinion": "4K 해상도로 화면이 매우 선명함",
+      "sentiment": "positive",
+      "aspect_cluster_id": "D-A-000399",
+      "status_cluster_id": "D-S-001237",
+      "catalog_comparison_eligible": true,
+      "opinion_unit_id": "u4"
+    },
+    {
+      "submission_review_id": "review_1",
+      "source_review_idx": 52282,
+      "raw_aspect": "색감",
+      "aspect": "색감",
+      "raw_status": "아쉬움",
+      "status": "아쉬움",
+      "excerpt": "4k해상도로 매우 선명하지만 색감이나 명암은 살짝 아쉬워요",
+      "opinion": "색감이 살짝 아쉬움",
+      "sentiment": "negative",
+      "aspect_cluster_id": "D-A-000113",
+      "status_cluster_id": "D-S-000416",
+      "catalog_comparison_eligible": true,
+      "opinion_unit_id": "u5"
+    },
+    {
+      "submission_review_id": "review_1",
+      "source_review_idx": 52282,
+      "raw_aspect": "명암",
+      "aspect": "명암",
+      "raw_status": "아쉬움",
+      "status": "아쉬움",
+      "excerpt": "4k해상도로 매우 선명하지만 색감이나 명암은 살짝 아쉬워요",
+      "opinion": "명암이 살짝 아쉬움",
+      "sentiment": "negative",
+      "aspect_cluster_id": "D-A-000133",
+      "status_cluster_id": "D-S-000472",
+      "catalog_comparison_eligible": true,
+      "opinion_unit_id": "u6"
+    },
+    {
+      "submission_review_id": "review_1",
+      "source_review_idx": 52282,
+      "raw_aspect": "UI 반응성",
+      "aspect": "UI 반응성",
+      "raw_status": "버벅임",
+      "status": "버벅임",
+      "excerpt": "ui가 살짝 버벅이는 느낌이 들어 이점은 좀 안좋아요",
+      "opinion": "UI가 살짝 버벅이는 느낌이 들어 좋지 않음",
+      "sentiment": "negative",
+      "aspect_cluster_id": "D-A-000026",
+      "status_cluster_id": "D-S-000055",
+      "catalog_comparison_eligible": true,
+      "opinion_unit_id": "u7"
+    },
+    {
+      "submission_review_id": "review_1",
+      "source_review_idx": 52282,
+      "raw_aspect": "가성비",
+      "aspect": "가성비",
+      "raw_status": "매우 좋음",
+      "status": "좋음",
+      "excerpt": "가격대비 제품이 너무 좋아서 가성비 짱인 제품이예요",
+      "opinion": "가격 대비 제품이 너무 좋아 가성비가 매우 좋음",
+      "sentiment": "positive",
+      "aspect_cluster_id": "D-A-000035",
+      "status_cluster_id": "D-S-000131",
+      "catalog_comparison_eligible": true,
+      "opinion_unit_id": "u8"
+    }
+  ],
+  "catalog_relationships": [
+    {
+      "rank": 1,
+      "comparison_grain": "aspect_status",
+      "aspect": "사물인터넷 가전 제어",
+      "status": "제공됨",
+      "aspect_cluster_id": "D-A-000207",
+      "status_cluster_id": "D-S-000694",
+      "catalog_review_count": 71,
+      "aspect_review_count": 2,
+      "same_status_review_count": 1,
+      "other_status_review_count": 0,
+      "other_status_sentiment": {
+        "counts": {
+          "positive": 0,
+          "negative": 0,
+          "mixed": 0,
+          "neutral": 0,
+          "unknown": 0
+        },
+        "shares": {
+          "positive": null,
+          "negative": null,
+          "mixed": null,
+          "neutral": null,
+          "unknown": null
+        },
+        "dominant_sentiment": null,
+        "dominant_share": null,
+        "positive_wilson_95": {
+          "lower": null,
+          "upper": null
+        },
+        "negative_wilson_95": {
+          "lower": null,
+          "upper": null
+        },
+        "normalized_entropy": null
+      },
+      "other_aspect_top_statuses": [
+        {
+          "status": "버튼 하나로 제어 가능",
+          "status_cluster_id": "D-S-000693",
+          "supporting_review_count": 1,
+          "sentiment": {
+            "counts": {
+              "positive": 1,
+              "negative": 0,
+              "mixed": 0,
+              "neutral": 0,
+              "unknown": 0
+            },
+            "shares": {
+              "positive": 1.0,
+              "negative": 0.0,
+              "mixed": 0.0,
+              "neutral": 0.0,
+              "unknown": 0.0
+            },
+            "dominant_sentiment": "positive",
+            "dominant_share": 1.0,
+            "positive_wilson_95": {
+              "lower": 0.206549,
+              "upper": 1.0
+            },
+            "negative_wilson_95": {
+              "lower": 0.0,
+              "upper": 0.793451
+            },
+            "normalized_entropy": 0.0
+          },
+          "rank": 1
+        }
+      ],
+      "submitted_sentiment": "positive",
+      "submitted_review_vote_count": 1,
+      "submitted_opinion_unit_ids": [
+        "u1"
+      ],
+      "relation_code": "NOT_MENTIONED_BY_OTHER_REVIEWS",
+      "relation_label": "판단하기 어렵습니다"
+    },
+    {
+      "rank": 2,
+      "comparison_grain": "aspect_status",
+      "aspect": "OTT 재생",
+      "status": "바로 재생 가능",
+      "aspect_cluster_id": "D-A-000018",
+      "status_cluster_id": "D-S-000038",
+      "catalog_review_count": 71,
+      "aspect_review_count": 3,
+      "same_status_review_count": 1,
+      "other_status_review_count": 0,
+      "other_status_sentiment": {
+        "counts": {
+          "positive": 0,
+          "negative": 0,
+          "mixed": 0,
+          "neutral": 0,
+          "unknown": 0
+        },
+        "shares": {
+          "positive": null,
+          "negative": null,
+          "mixed": null,
+          "neutral": null,
+          "unknown": null
+        },
+        "dominant_sentiment": null,
+        "dominant_share": null,
+        "positive_wilson_95": {
+          "lower": null,
+          "upper": null
+        },
+        "negative_wilson_95": {
+          "lower": null,
+          "upper": null
+        },
+        "normalized_entropy": null
+      },
+      "other_aspect_top_statuses": [
+        {
+          "status": "원활함",
+          "status_cluster_id": "D-S-000039",
+          "supporting_review_count": 2,
+          "sentiment": {
+            "counts": {
+              "positive": 2,
+              "negative": 0,
+              "mixed": 0,
+              "neutral": 0,
+              "unknown": 0
+            },
+            "shares": {
+              "positive": 1.0,
+              "negative": 0.0,
+              "mixed": 0.0,
+              "neutral": 0.0,
+              "unknown": 0.0
+            },
+            "dominant_sentiment": "positive",
+            "dominant_share": 1.0,
+            "positive_wilson_95": {
+              "lower": 0.34238,
+              "upper": 1.0
+            },
+            "negative_wilson_95": {
+              "lower": 0.0,
+              "upper": 0.65762
+            },
+            "normalized_entropy": 0.0
+          },
+          "rank": 1
+        }
+      ],
+      "submitted_sentiment": "positive",
+      "submitted_review_vote_count": 1,
+      "submitted_opinion_unit_ids": [
+        "u2"
+      ],
+      "relation_code": "NOT_MENTIONED_BY_OTHER_REVIEWS",
+      "relation_label": "판단하기 어렵습니다"
+    },
+    {
+      "rank": 3,
+      "comparison_grain": "aspect_status",
+      "aspect": "기능",
+      "status": "다양함",
+      "aspect_cluster_id": "D-A-000067",
+      "status_cluster_id": "D-S-000233",
+      "catalog_review_count": 71,
+      "aspect_review_count": 2,
+      "same_status_review_count": 2,
+      "other_status_review_count": 1,
+      "other_status_sentiment": {
+        "counts": {
+          "positive": 1,
+          "negative": 0,
+          "mixed": 0,
+          "neutral": 0,
+          "unknown": 0
+        },
+        "shares": {
+          "positive": 1.0,
+          "negative": 0.0,
+          "mixed": 0.0,
+          "neutral": 0.0,
+          "unknown": 0.0
+        },
+        "dominant_sentiment": "positive",
+        "dominant_share": 1.0,
+        "positive_wilson_95": {
+          "lower": 0.206549,
+          "upper": 1.0
+        },
+        "negative_wilson_95": {
+          "lower": 0.0,
+          "upper": 0.793451
+        },
+        "normalized_entropy": 0.0
+      },
+      "other_aspect_top_statuses": [],
+      "submitted_sentiment": "positive",
+      "submitted_review_vote_count": 1,
+      "submitted_opinion_unit_ids": [
+        "u3"
+      ],
+      "relation_code": "ALIGNS_WITH_OTHER_REVIEW_MAJORITY",
+      "relation_label": "일치합니다"
+    },
+    {
+      "rank": 4,
+      "comparison_grain": "aspect_status",
+      "aspect": "화질 선명도",
+      "status": "선명함",
+      "aspect_cluster_id": "D-A-000399",
+      "status_cluster_id": "D-S-001237",
+      "catalog_review_count": 71,
+      "aspect_review_count": 4,
+      "same_status_review_count": 3,
+      "other_status_review_count": 2,
+      "other_status_sentiment": {
+        "counts": {
+          "positive": 2,
+          "negative": 0,
+          "mixed": 0,
+          "neutral": 0,
+          "unknown": 0
+        },
+        "shares": {
+          "positive": 1.0,
+          "negative": 0.0,
+          "mixed": 0.0,
+          "neutral": 0.0,
+          "unknown": 0.0
+        },
+        "dominant_sentiment": "positive",
+        "dominant_share": 1.0,
+        "positive_wilson_95": {
+          "lower": 0.34238,
+          "upper": 1.0
+        },
+        "negative_wilson_95": {
+          "lower": 0.0,
+          "upper": 0.65762
+        },
+        "normalized_entropy": 0.0
+      },
+      "other_aspect_top_statuses": [],
+      "submitted_sentiment": "positive",
+      "submitted_review_vote_count": 1,
+      "submitted_opinion_unit_ids": [
+        "u4"
+      ],
+      "relation_code": "ALIGNS_WITH_OTHER_REVIEW_MAJORITY",
+      "relation_label": "일치합니다"
+    },
+    {
+      "rank": 5,
+      "comparison_grain": "aspect_status",
+      "aspect": "색감",
+      "status": "아쉬움",
+      "aspect_cluster_id": "D-A-000113",
+      "status_cluster_id": "D-S-000416",
+      "catalog_review_count": 71,
+      "aspect_review_count": 4,
+      "same_status_review_count": 1,
+      "other_status_review_count": 0,
+      "other_status_sentiment": {
+        "counts": {
+          "positive": 0,
+          "negative": 0,
+          "mixed": 0,
+          "neutral": 0,
+          "unknown": 0
+        },
+        "shares": {
+          "positive": null,
+          "negative": null,
+          "mixed": null,
+          "neutral": null,
+          "unknown": null
+        },
+        "dominant_sentiment": null,
+        "dominant_share": null,
+        "positive_wilson_95": {
+          "lower": null,
+          "upper": null
+        },
+        "negative_wilson_95": {
+          "lower": null,
+          "upper": null
+        },
+        "normalized_entropy": null
+      },
+      "other_aspect_top_statuses": [
+        {
+          "status": "거의 검은색",
+          "status_cluster_id": "D-S-000398",
+          "supporting_review_count": 1,
+          "sentiment": {
+            "counts": {
+              "positive": 1,
+              "negative": 0,
+              "mixed": 0,
+              "neutral": 0,
+              "unknown": 0
+            },
+            "shares": {
+              "positive": 1.0,
+              "negative": 0.0,
+              "mixed": 0.0,
+              "neutral": 0.0,
+              "unknown": 0.0
+            },
+            "dominant_sentiment": "positive",
+            "dominant_share": 1.0,
+            "positive_wilson_95": {
+              "lower": 0.206549,
+              "upper": 1.0
+            },
+            "negative_wilson_95": {
+              "lower": 0.0,
+              "upper": 0.793451
+            },
+            "normalized_entropy": 0.0
+          },
+          "rank": 1
+        },
+        {
+          "status": "적응하기 어려움",
+          "status_cluster_id": "D-S-000422",
+          "supporting_review_count": 1,
+          "sentiment": {
+            "counts": {
+              "positive": 0,
+              "negative": 1,
+              "mixed": 0,
+              "neutral": 0,
+              "unknown": 0
+            },
+            "shares": {
+              "positive": 0.0,
+              "negative": 1.0,
+              "mixed": 0.0,
+              "neutral": 0.0,
+              "unknown": 0.0
+            },
+            "dominant_sentiment": "negative",
+            "dominant_share": 1.0,
+            "positive_wilson_95": {
+              "lower": 0.0,
+              "upper": 0.793451
+            },
+            "negative_wilson_95": {
+              "lower": 0.206549,
+              "upper": 1.0
+            },
+            "normalized_entropy": 0.0
+          },
+          "rank": 2
+        },
+        {
+          "status": "제대로 잡히지 않음",
+          "status_cluster_id": "D-S-000423",
+          "supporting_review_count": 1,
+          "sentiment": {
+            "counts": {
+              "positive": 0,
+              "negative": 1,
+              "mixed": 0,
+              "neutral": 0,
+              "unknown": 0
+            },
+            "shares": {
+              "positive": 0.0,
+              "negative": 1.0,
+              "mixed": 0.0,
+              "neutral": 0.0,
+              "unknown": 0.0
+            },
+            "dominant_sentiment": "negative",
+            "dominant_share": 1.0,
+            "positive_wilson_95": {
+              "lower": 0.0,
+              "upper": 0.793451
+            },
+            "negative_wilson_95": {
+              "lower": 0.206549,
+              "upper": 1.0
+            },
+            "normalized_entropy": 0.0
+          },
+          "rank": 3
+        }
+      ],
+      "submitted_sentiment": "negative",
+      "submitted_review_vote_count": 1,
+      "submitted_opinion_unit_ids": [
+        "u5"
+      ],
+      "relation_code": "NOT_MENTIONED_BY_OTHER_REVIEWS",
+      "relation_label": "판단하기 어렵습니다"
+    },
+    {
+      "rank": 6,
+      "comparison_grain": "aspect_status",
+      "aspect": "명암",
+      "status": "아쉬움",
+      "aspect_cluster_id": "D-A-000133",
+      "status_cluster_id": "D-S-000472",
+      "catalog_review_count": 71,
+      "aspect_review_count": 1,
+      "same_status_review_count": 1,
+      "other_status_review_count": 0,
+      "other_status_sentiment": {
+        "counts": {
+          "positive": 0,
+          "negative": 0,
+          "mixed": 0,
+          "neutral": 0,
+          "unknown": 0
+        },
+        "shares": {
+          "positive": null,
+          "negative": null,
+          "mixed": null,
+          "neutral": null,
+          "unknown": null
+        },
+        "dominant_sentiment": null,
+        "dominant_share": null,
+        "positive_wilson_95": {
+          "lower": null,
+          "upper": null
+        },
+        "negative_wilson_95": {
+          "lower": null,
+          "upper": null
+        },
+        "normalized_entropy": null
+      },
+      "other_aspect_top_statuses": [],
+      "submitted_sentiment": "negative",
+      "submitted_review_vote_count": 1,
+      "submitted_opinion_unit_ids": [
+        "u6"
+      ],
+      "relation_code": "NOT_MENTIONED_BY_OTHER_REVIEWS",
+      "relation_label": "판단하기 어렵습니다"
+    },
+    {
+      "rank": 7,
+      "comparison_grain": "aspect_status",
+      "aspect": "UI 반응성",
+      "status": "버벅임",
+      "aspect_cluster_id": "D-A-000026",
+      "status_cluster_id": "D-S-000055",
+      "catalog_review_count": 71,
+      "aspect_review_count": 1,
+      "same_status_review_count": 1,
+      "other_status_review_count": 0,
+      "other_status_sentiment": {
+        "counts": {
+          "positive": 0,
+          "negative": 0,
+          "mixed": 0,
+          "neutral": 0,
+          "unknown": 0
+        },
+        "shares": {
+          "positive": null,
+          "negative": null,
+          "mixed": null,
+          "neutral": null,
+          "unknown": null
+        },
+        "dominant_sentiment": null,
+        "dominant_share": null,
+        "positive_wilson_95": {
+          "lower": null,
+          "upper": null
+        },
+        "negative_wilson_95": {
+          "lower": null,
+          "upper": null
+        },
+        "normalized_entropy": null
+      },
+      "other_aspect_top_statuses": [],
+      "submitted_sentiment": "negative",
+      "submitted_review_vote_count": 1,
+      "submitted_opinion_unit_ids": [
+        "u7"
+      ],
+      "relation_code": "NOT_MENTIONED_BY_OTHER_REVIEWS",
+      "relation_label": "판단하기 어렵습니다"
+    },
+    {
+      "rank": 8,
+      "comparison_grain": "aspect_status",
+      "aspect": "가성비",
+      "status": "좋음",
+      "aspect_cluster_id": "D-A-000035",
+      "status_cluster_id": "D-S-000131",
+      "catalog_review_count": 71,
+      "aspect_review_count": 3,
+      "same_status_review_count": 1,
+      "other_status_review_count": 0,
+      "other_status_sentiment": {
+        "counts": {
+          "positive": 0,
+          "negative": 0,
+          "mixed": 0,
+          "neutral": 0,
+          "unknown": 0
+        },
+        "shares": {
+          "positive": null,
+          "negative": null,
+          "mixed": null,
+          "neutral": null,
+          "unknown": null
+        },
+        "dominant_sentiment": null,
+        "dominant_share": null,
+        "positive_wilson_95": {
+          "lower": null,
+          "upper": null
+        },
+        "negative_wilson_95": {
+          "lower": null,
+          "upper": null
+        },
+        "normalized_entropy": null
+      },
+      "other_aspect_top_statuses": [
+        {
+          "status": "괜찮음",
+          "status_cluster_id": "D-S-000123",
+          "supporting_review_count": 1,
+          "sentiment": {
+            "counts": {
+              "positive": 1,
+              "negative": 0,
+              "mixed": 0,
+              "neutral": 0,
+              "unknown": 0
+            },
+            "shares": {
+              "positive": 1.0,
+              "negative": 0.0,
+              "mixed": 0.0,
+              "neutral": 0.0,
+              "unknown": 0.0
+            },
+            "dominant_sentiment": "positive",
+            "dominant_share": 1.0,
+            "positive_wilson_95": {
+              "lower": 0.206549,
+              "upper": 1.0
+            },
+            "negative_wilson_95": {
+              "lower": 0.0,
+              "upper": 0.793451
+            },
+            "normalized_entropy": 0.0
+          },
+          "rank": 1
+        },
+        {
+          "status": "뛰어남",
+          "status_cluster_id": "D-S-000127",
+          "supporting_review_count": 1,
+          "sentiment": {
+            "counts": {
+              "positive": 1,
+              "negative": 0,
+              "mixed": 0,
+              "neutral": 0,
+              "unknown": 0
+            },
+            "shares": {
+              "positive": 1.0,
+              "negative": 0.0,
+              "mixed": 0.0,
+              "neutral": 0.0,
+              "unknown": 0.0
+            },
+            "dominant_sentiment": "positive",
+            "dominant_share": 1.0,
+            "positive_wilson_95": {
+              "lower": 0.206549,
+              "upper": 1.0
+            },
+            "negative_wilson_95": {
+              "lower": 0.0,
+              "upper": 0.793451
+            },
+            "normalized_entropy": 0.0
+          },
+          "rank": 2
+        }
+      ],
+      "submitted_sentiment": "positive",
+      "submitted_review_vote_count": 1,
+      "submitted_opinion_unit_ids": [
+        "u8"
+      ],
+      "relation_code": "NOT_MENTIONED_BY_OTHER_REVIEWS",
+      "relation_label": "판단하기 어렵습니다"
+    }
+  ],
+  "unmentioned_aspect_status": [
+    {
+      "aspect": "사물인터넷 가전 제어",
+      "status": "제공됨",
+      "aspect_cluster_id": "D-A-000207",
+      "status_cluster_id": "D-S-000694",
+      "submitted_opinion_unit_ids": [
+        "u1"
+      ]
+    },
+    {
+      "aspect": "OTT 재생",
+      "status": "바로 재생 가능",
+      "aspect_cluster_id": "D-A-000018",
+      "status_cluster_id": "D-S-000038",
+      "submitted_opinion_unit_ids": [
+        "u2"
+      ]
+    },
+    {
+      "aspect": "색감",
+      "status": "아쉬움",
+      "aspect_cluster_id": "D-A-000113",
+      "status_cluster_id": "D-S-000416",
+      "submitted_opinion_unit_ids": [
+        "u5"
+      ]
+    },
+    {
+      "aspect": "명암",
+      "status": "아쉬움",
+      "aspect_cluster_id": "D-A-000133",
+      "status_cluster_id": "D-S-000472",
+      "submitted_opinion_unit_ids": [
+        "u6"
+      ]
+    },
+    {
+      "aspect": "UI 반응성",
+      "status": "버벅임",
+      "aspect_cluster_id": "D-A-000026",
+      "status_cluster_id": "D-S-000055",
+      "submitted_opinion_unit_ids": [
+        "u7"
+      ]
+    },
+    {
+      "aspect": "가성비",
+      "status": "좋음",
+      "aspect_cluster_id": "D-A-000035",
+      "status_cluster_id": "D-S-000131",
+      "submitted_opinion_unit_ids": [
+        "u8"
+      ]
+    }
+  ],
+  "alternative_recommendations": {
+    "status": "COMPLETED",
+    "ranking_contract": {
+      "source": "submitted_negative_aspect_status_review_votes",
+      "status_match_policy": "exact_status_cluster_id_for_undesired_condition",
+      "positive_alternative_policy": "same_aspect_different_status_with_positive_dominant_sentiment",
+      "negative_evidence_strength": "support_reliability * negative_wilson_upper_95",
+      "positive_alternative_strength": "support_reliability * positive_wilson_lower_95",
+      "weakness_utility": "weighted_mean(positive_alternative_strength - negative_evidence_strength)",
+      "experience_similarity_weight": 0.25,
+      "weakness_utility_weight": 0.75,
+      "weakness_repair_score": "0.25 * experience_similarity + 0.75 * ((weakness_utility + 1) / 2)"
+    },
+    "negative_conditions": [
+      {
+        "condition_id": "condition_1",
+        "aspect": "색감",
+        "status": "아쉬움",
+        "aspect_cluster_id": "D-A-000113",
+        "status_cluster_id": "D-S-000416",
+        "submitted_review_vote_count": 1,
+        "importance": 1.0,
+        "submitted_opinion_unit_ids": [
+          "u5"
+        ]
+      },
+      {
+        "condition_id": "condition_2",
+        "aspect": "명암",
+        "status": "아쉬움",
+        "aspect_cluster_id": "D-A-000133",
+        "status_cluster_id": "D-S-000472",
+        "submitted_review_vote_count": 1,
+        "importance": 1.0,
+        "submitted_opinion_unit_ids": [
+          "u6"
+        ]
+      },
+      {
+        "condition_id": "condition_3",
+        "aspect": "UI 반응성",
+        "status": "버벅임",
+        "aspect_cluster_id": "D-A-000026",
+        "status_cluster_id": "D-S-000055",
+        "submitted_review_vote_count": 1,
+        "importance": 1.0,
+        "submitted_opinion_unit_ids": [
+          "u7"
+        ]
+      }
+    ],
+    "excluded_negative_conditions": [],
+    "alternatives": [
+      {
+        "product_name": "AOC 알파스캔 Q27G2S 게이밍 IPS 155 QHD 프리싱크 무결점",
+        "catalog_review_count": 116,
+        "weakness_utility": 0.204461,
+        "experience_similarity": 0.230365,
+        "weakness_repair_score": 0.509264,
+        "evidence_coverage": 0.666667,
+        "requirement_matches": [
+          {
+            "condition_id": "condition_1",
+            "aspect": "색감",
+            "status": "아쉬움",
+            "relation": "POSITIVE_ALTERNATIVE_ONLY",
+            "utility": 0.510109,
+            "undesired_status_profile": null,
+            "positive_alternative_profile": {
+              "aspect": "색감",
+              "status": "좋음",
+              "supporting_review_count": 4,
+              "sentiment": {
+                "counts": {
+                  "positive": 4,
+                  "negative": 0,
+                  "mixed": 0,
+                  "neutral": 0,
+                  "unknown": 0
+                },
+                "shares": {
+                  "positive": 1.0,
+                  "negative": 0.0,
+                  "mixed": 0.0,
+                  "neutral": 0.0,
+                  "unknown": 0.0
+                },
+                "dominant_sentiment": "positive",
+                "dominant_share": 1.0,
+                "positive_wilson_95": {
+                  "lower": 0.510109,
+                  "upper": 1.0
+                },
+                "negative_wilson_95": {
+                  "lower": 0.0,
+                  "upper": 0.489891
+                },
+                "normalized_entropy": 0.0
+              }
+            },
+            "reason": "'색감 아쉬움' 부정 상태 미관측; '색감 좋음' 긍정 근거 4개"
+          },
+          {
+            "condition_id": "condition_2",
+            "aspect": "명암",
+            "status": "아쉬움",
+            "relation": "POSITIVE_ALTERNATIVE_ONLY",
+            "utility": 0.103275,
+            "undesired_status_profile": null,
+            "positive_alternative_profile": {
+              "aspect": "명암",
+              "status": "높음",
+              "supporting_review_count": 1,
+              "sentiment": {
+                "counts": {
+                  "positive": 1,
+                  "negative": 0,
+                  "mixed": 0,
+                  "neutral": 0,
+                  "unknown": 0
+                },
+                "shares": {
+                  "positive": 1.0,
+                  "negative": 0.0,
+                  "mixed": 0.0,
+                  "neutral": 0.0,
+                  "unknown": 0.0
+                },
+                "dominant_sentiment": "positive",
+                "dominant_share": 1.0,
+                "positive_wilson_95": {
+                  "lower": 0.206549,
+                  "upper": 1.0
+                },
+                "negative_wilson_95": {
+                  "lower": 0.0,
+                  "upper": 0.793451
+                },
+                "normalized_entropy": 0.0
+              }
+            },
+            "reason": "'명암 아쉬움' 부정 상태 미관측; '명암 높음' 긍정 근거 1개"
+          },
+          {
+            "condition_id": "condition_3",
+            "aspect": "UI 반응성",
+            "status": "버벅임",
+            "relation": "NO_EVIDENCE",
+            "utility": 0.0,
+            "undesired_status_profile": null,
+            "positive_alternative_profile": null,
+            "reason": "'UI 반응성 버벅임' 부정 상태 미관측"
+          }
+        ],
+        "recommendation_reason": "'색감 아쉬움' 부정 상태 미관측; '색감 좋음' 긍정 근거 4개 / '명암 아쉬움' 부정 상태 미관측; '명암 높음' 긍정 근거 1개",
+        "quality_codes": [
+          "LOW_SHARED_SUPPORT_RELIABILITY",
+          "NORMALIZATION_RISK_CLUSTERS_PRESENT"
+        ],
+        "rank": 1
+      },
+      {
+        "product_name": "오디세이 삼성전자 G3 S27AG300",
+        "catalog_review_count": 70,
+        "weakness_utility": 0.114127,
+        "experience_similarity": 0.256598,
+        "weakness_repair_score": 0.481947,
+        "evidence_coverage": 0.333333,
+        "requirement_matches": [
+          {
+            "condition_id": "condition_1",
+            "aspect": "색감",
+            "status": "아쉬움",
+            "relation": "POSITIVE_ALTERNATIVE_ONLY",
+            "utility": 0.34238,
+            "undesired_status_profile": null,
+            "positive_alternative_profile": {
+              "aspect": "색감",
+              "status": "선명함",
+              "supporting_review_count": 2,
+              "sentiment": {
+                "counts": {
+                  "positive": 2,
+                  "negative": 0,
+                  "mixed": 0,
+                  "neutral": 0,
+                  "unknown": 0
+                },
+                "shares": {
+                  "positive": 1.0,
+                  "negative": 0.0,
+                  "mixed": 0.0,
+                  "neutral": 0.0,
+                  "unknown": 0.0
+                },
+                "dominant_sentiment": "positive",
+                "dominant_share": 1.0,
+                "positive_wilson_95": {
+                  "lower": 0.34238,
+                  "upper": 1.0
+                },
+                "negative_wilson_95": {
+                  "lower": 0.0,
+                  "upper": 0.65762
+                },
+                "normalized_entropy": 0.0
+              }
+            },
+            "reason": "'색감 아쉬움' 부정 상태 미관측; '색감 선명함' 긍정 근거 2개"
+          },
+          {
+            "condition_id": "condition_2",
+            "aspect": "명암",
+            "status": "아쉬움",
+            "relation": "NO_EVIDENCE",
+            "utility": 0.0,
+            "undesired_status_profile": null,
+            "positive_alternative_profile": null,
+            "reason": "'명암 아쉬움' 부정 상태 미관측"
+          },
+          {
+            "condition_id": "condition_3",
+            "aspect": "UI 반응성",
+            "status": "버벅임",
+            "relation": "NO_EVIDENCE",
+            "utility": 0.0,
+            "undesired_status_profile": null,
+            "positive_alternative_profile": null,
+            "reason": "'UI 반응성 버벅임' 부정 상태 미관측"
+          }
+        ],
+        "recommendation_reason": "'색감 아쉬움' 부정 상태 미관측; '색감 선명함' 긍정 근거 2개",
+        "quality_codes": [
+          "LOW_SHARED_SUPPORT_RELIABILITY",
+          "NORMALIZATION_RISK_CLUSTERS_PRESENT"
+        ],
+        "rank": 2
+      },
+      {
+        "product_name": "옵틱스 MSI G271 게이밍 144 아이세이버 무결점",
+        "catalog_review_count": 70,
+        "weakness_utility": 0.114127,
+        "experience_similarity": 0.251018,
+        "weakness_repair_score": 0.480552,
+        "evidence_coverage": 0.333333,
+        "requirement_matches": [
+          {
+            "condition_id": "condition_1",
+            "aspect": "색감",
+            "status": "아쉬움",
+            "relation": "POSITIVE_ALTERNATIVE_ONLY",
+            "utility": 0.34238,
+            "undesired_status_profile": null,
+            "positive_alternative_profile": {
+              "aspect": "색감",
+              "status": "풍부함",
+              "supporting_review_count": 2,
+              "sentiment": {
+                "counts": {
+                  "positive": 2,
+                  "negative": 0,
+                  "mixed": 0,
+                  "neutral": 0,
+                  "unknown": 0
+                },
+                "shares": {
+                  "positive": 1.0,
+                  "negative": 0.0,
+                  "mixed": 0.0,
+                  "neutral": 0.0,
+                  "unknown": 0.0
+                },
+                "dominant_sentiment": "positive",
+                "dominant_share": 1.0,
+                "positive_wilson_95": {
+                  "lower": 0.34238,
+                  "upper": 1.0
+                },
+                "negative_wilson_95": {
+                  "lower": 0.0,
+                  "upper": 0.65762
+                },
+                "normalized_entropy": 0.0
+              }
+            },
+            "reason": "'색감 아쉬움' 부정 상태 미관측; '색감 풍부함' 긍정 근거 2개"
+          },
+          {
+            "condition_id": "condition_2",
+            "aspect": "명암",
+            "status": "아쉬움",
+            "relation": "NO_EVIDENCE",
+            "utility": 0.0,
+            "undesired_status_profile": null,
+            "positive_alternative_profile": null,
+            "reason": "'명암 아쉬움' 부정 상태 미관측"
+          },
+          {
+            "condition_id": "condition_3",
+            "aspect": "UI 반응성",
+            "status": "버벅임",
+            "relation": "NO_EVIDENCE",
+            "utility": 0.0,
+            "undesired_status_profile": null,
+            "positive_alternative_profile": null,
+            "reason": "'UI 반응성 버벅임' 부정 상태 미관측"
+          }
+        ],
+        "recommendation_reason": "'색감 아쉬움' 부정 상태 미관측; '색감 풍부함' 긍정 근거 2개",
+        "quality_codes": [
+          "LOW_SHARED_SUPPORT_RELIABILITY",
+          "NORMALIZATION_RISK_CLUSTERS_PRESENT"
+        ],
+        "rank": 3
+      }
+    ]
+  }
+}

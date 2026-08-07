@@ -1,0 +1,15 @@
+{
+  "scope": "full_input_datasets",
+  "sampling_used": false,
+  "integrity_check_count": 38,
+  "integrity_checks_passed": 38,
+  "representative_row_count": 2352,
+  "opinion_row_count": 2583,
+  "eligible_opinion_row_count": 2401,
+  "common_review_count": 748,
+  "user_evaluation_task_count": 100,
+  "cluster_evaluation_task_count": 100,
+  "user_evaluation_random_seed": 17171771,
+  "user_evaluation_sampling_used": true,
+  "user_evaluation_completed": false
+}

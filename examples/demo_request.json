@@ -1,0 +1,27 @@
+{
+  "submission_id": "demo-review-50967",
+  "submitted_at_local": "20260803-213400",
+  "product_name": "AOC 알파스캔 Q27G2S 게이밍 IPS 155 QHD 프리싱크 무결점",
+  "reviews": [
+    {
+      "source_review_idx": 50967,
+      "review": "매번매진되는 이유가 있었네요. 이 제품 처음인데 퀄리티가 상당히 좋군요. 더 큰사이즈랑 구매고민됐었는데 기대보다 화면이 작게 느껴져서 후회가 되네요ㅠ",
+      "opinion_units": [
+        {
+          "raw_aspect": "화면 크기",
+          "aspect": "화면 크기",
+          "raw_status": "작게 느껴짐",
+          "status": "작아 보임",
+          "excerpt": "더 큰사이즈랑 구매고민됐었는데 기대보다 화면이 작게 느껴져서 후회가 되네요ㅠ",
+          "opinion": "더 큰 사이즈와 고민했지만 기대보다 화면이 작게 느껴져 구매를 후회함",
+          "sentiment": "negative",
+          "aspect_cluster_id": "D-A-000392",
+          "status_cluster_id": "D-S-001196"
+        }
+      ]
+    }
+  ],
+  "excluded_products": [
+    "AOC 알파스캔 Q27G2S 게이밍 IPS 155 QHD 프리싱크 무결점"
+  ]
+}

@@ -1,0 +1,12 @@
+2026-08-03 21:33:39,033 INFO Starting full-dataset run output=/Users/jaewone/Downloads/embedding_clustering_experiment/experiment_results/20260803-213339
+2026-08-03 21:33:39,034 INFO Validated separated inputs representative_rows=2352 opinion_rows=2583 common_reviews=748
+2026-08-03 21:33:39,878 INFO Loaded embedding model=snunlp/KR-SBERT-Medium-extended-klueNLItriplet_PARpair_QApair-klueSTS device=mps batch_size=32
+2026-08-03 21:33:39,879 INFO Normalization lineage version=2026-08-03 config_sha256=d9f2bec666c2691d24b56b0205191396a7da1a63e632ef59c29975230f44f232
+2026-08-03 21:33:39,881 INFO Opinion filter kept=2401 excluded=182 labels=['전반적 상품 경험']
+2026-08-03 21:33:39,882 INFO Experiment B: clustering 2352 rows without category boundaries
+2026-08-03 21:33:42,095 INFO Experiment D aspect: clustering 2401 eligible rows without category boundaries
+2026-08-03 21:33:43,919 INFO Experiment D status: clustering 2401 non-null rows inside aspect clusters
+2026-08-03 21:33:47,161 INFO Serialized A-D outputs A/B=2352 rows C/D=2401 rows
+2026-08-03 21:33:47,200 INFO Starting automatic evaluation over the full dataset
+2026-08-03 21:34:00,803 INFO Automatic evaluation completed checks=38/38 common_reviews=748 human_review_tasks=100 human_cluster_tasks=100
+2026-08-03 21:34:00,803 INFO Completed full-dataset run cached_expressions=1850

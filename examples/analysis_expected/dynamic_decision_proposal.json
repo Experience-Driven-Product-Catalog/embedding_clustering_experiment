@@ -1,0 +1,445 @@
+{
+  "schema_version": "1.0.0",
+  "proposal_type": "dynamic_review_decision_proposal",
+  "proposal_id": "dynamic_review_decision_proposal:20260803-213339:demo-review-50967:5a3f2ab9b0ce",
+  "source": {
+    "experiment": "D",
+    "run_id": "20260803-213339",
+    "created_at_local": "2026-08-03T21:34:00.803380+09:00",
+    "scope": "full_input_datasets",
+    "sampling_used": false,
+    "run_manifest_sha256": "5d0399a024d67b2324c3f35a25561092e0b8045ee5659dd773c1309cdd0a6c6b",
+    "normalization": {
+      "embedding_model_id": "snunlp/KR-SBERT-Medium-extended-klueNLItriplet_PARpair_QApair-klueSTS",
+      "normalization_version": "2026-08-03",
+      "normalization_run_id": "20260803-213339",
+      "normalization_config_sha256": "d9f2bec666c2691d24b56b0205191396a7da1a63e632ef59c29975230f44f232",
+      "mapping_distance_metric": "cosine",
+      "lineage_result_tables": [
+        "experiment_b",
+        "experiment_d"
+      ],
+      "baseline_result_tables": [
+        "experiment_a",
+        "experiment_c"
+      ]
+    },
+    "input_sha256": {
+      "reviews": "53626449590d101d63771318848369b6a3a94a667e6fce010b020adba5e0041f",
+      "opinion_units": "75eb7e63c8f00714c97c4f497f2058e37b4be0d623df9aa873cb66e0fab71738"
+    },
+    "human_evaluation": {
+      "status": "completed",
+      "completed_result_file_count": 3,
+      "results_set_sha256": "444186dc3f29c624f7ce08ea32c9f8245a130ca36586a8dd597c8b651b0d20e3",
+      "evaluator_count": 3
+    }
+  },
+  "submission": {
+    "submission_id": "demo-review-50967",
+    "submitted_at_local": "20260803-213400",
+    "product_name": "AOC 알파스캔 Q27G2S 게이밍 IPS 155 QHD 프리싱크 무결점",
+    "reviews": [
+      {
+        "submission_review_id": "review_1",
+        "source_review_idx": 50967,
+        "review": "매번매진되는 이유가 있었네요. 이 제품 처음인데 퀄리티가 상당히 좋군요. 더 큰사이즈랑 구매고민됐었는데 기대보다 화면이 작게 느껴져서 후회가 되네요ㅠ",
+        "opinion_units": [
+          {
+            "raw_aspect": "화면 크기",
+            "aspect": "화면 크기",
+            "raw_status": "작게 느껴짐",
+            "status": "작아 보임",
+            "excerpt": "더 큰사이즈랑 구매고민됐었는데 기대보다 화면이 작게 느껴져서 후회가 되네요ㅠ",
+            "opinion": "더 큰 사이즈와 고민했지만 기대보다 화면이 작게 느껴져 구매를 후회함",
+            "sentiment": "negative",
+            "aspect_cluster_id": "D-A-000392",
+            "status_cluster_id": "D-S-001196",
+            "catalog_comparison_eligible": true,
+            "opinion_unit_id": "u1"
+          }
+        ]
+      }
+    ],
+    "excluded_products": [
+      "AOC 알파스캔 Q27G2S 게이밍 IPS 155 QHD 프리싱크 무결점"
+    ]
+  },
+  "submitted_opinion_units": [
+    {
+      "submission_review_id": "review_1",
+      "source_review_idx": 50967,
+      "raw_aspect": "화면 크기",
+      "aspect": "화면 크기",
+      "raw_status": "작게 느껴짐",
+      "status": "작아 보임",
+      "excerpt": "더 큰사이즈랑 구매고민됐었는데 기대보다 화면이 작게 느껴져서 후회가 되네요ㅠ",
+      "opinion": "더 큰 사이즈와 고민했지만 기대보다 화면이 작게 느껴져 구매를 후회함",
+      "sentiment": "negative",
+      "aspect_cluster_id": "D-A-000392",
+      "status_cluster_id": "D-S-001196",
+      "catalog_comparison_eligible": true,
+      "opinion_unit_id": "u1"
+    }
+  ],
+  "catalog_relationships": [
+    {
+      "rank": 1,
+      "comparison_grain": "aspect_status",
+      "aspect": "화면 크기",
+      "status": "작아 보임",
+      "aspect_cluster_id": "D-A-000392",
+      "status_cluster_id": "D-S-001196",
+      "catalog_review_count": 116,
+      "aspect_review_count": 7,
+      "same_status_review_count": 1,
+      "other_status_review_count": 0,
+      "other_status_sentiment": {
+        "counts": {
+          "positive": 0,
+          "negative": 0,
+          "mixed": 0,
+          "neutral": 0,
+          "unknown": 0
+        },
+        "shares": {
+          "positive": null,
+          "negative": null,
+          "mixed": null,
+          "neutral": null,
+          "unknown": null
+        },
+        "dominant_sentiment": null,
+        "dominant_share": null,
+        "positive_wilson_95": {
+          "lower": null,
+          "upper": null
+        },
+        "negative_wilson_95": {
+          "lower": null,
+          "upper": null
+        },
+        "normalized_entropy": null
+      },
+      "other_aspect_top_statuses": [
+        {
+          "status": "큼",
+          "status_cluster_id": "D-S-001193",
+          "supporting_review_count": 3,
+          "sentiment": {
+            "counts": {
+              "positive": 3,
+              "negative": 0,
+              "mixed": 0,
+              "neutral": 0,
+              "unknown": 0
+            },
+            "shares": {
+              "positive": 1.0,
+              "negative": 0.0,
+              "mixed": 0.0,
+              "neutral": 0.0,
+              "unknown": 0.0
+            },
+            "dominant_sentiment": "positive",
+            "dominant_share": 1.0,
+            "positive_wilson_95": {
+              "lower": 0.438503,
+              "upper": 1.0
+            },
+            "negative_wilson_95": {
+              "lower": 0.0,
+              "upper": 0.561497
+            },
+            "normalized_entropy": 0.0
+          },
+          "rank": 1
+        },
+        {
+          "status": "게이밍에 최적화됨",
+          "status_cluster_id": "D-S-001187",
+          "supporting_review_count": 1,
+          "sentiment": {
+            "counts": {
+              "positive": 1,
+              "negative": 0,
+              "mixed": 0,
+              "neutral": 0,
+              "unknown": 0
+            },
+            "shares": {
+              "positive": 1.0,
+              "negative": 0.0,
+              "mixed": 0.0,
+              "neutral": 0.0,
+              "unknown": 0.0
+            },
+            "dominant_sentiment": "positive",
+            "dominant_share": 1.0,
+            "positive_wilson_95": {
+              "lower": 0.206549,
+              "upper": 1.0
+            },
+            "negative_wilson_95": {
+              "lower": 0.0,
+              "upper": 0.793451
+            },
+            "normalized_entropy": 0.0
+          },
+          "rank": 2
+        },
+        {
+          "status": "더 크게 보임",
+          "status_cluster_id": "D-S-001192",
+          "supporting_review_count": 1,
+          "sentiment": {
+            "counts": {
+              "positive": 1,
+              "negative": 0,
+              "mixed": 0,
+              "neutral": 0,
+              "unknown": 0
+            },
+            "shares": {
+              "positive": 1.0,
+              "negative": 0.0,
+              "mixed": 0.0,
+              "neutral": 0.0,
+              "unknown": 0.0
+            },
+            "dominant_sentiment": "positive",
+            "dominant_share": 1.0,
+            "positive_wilson_95": {
+              "lower": 0.206549,
+              "upper": 1.0
+            },
+            "negative_wilson_95": {
+              "lower": 0.0,
+              "upper": 0.793451
+            },
+            "normalized_entropy": 0.0
+          },
+          "rank": 3
+        }
+      ],
+      "submitted_sentiment": "negative",
+      "submitted_review_vote_count": 1,
+      "submitted_opinion_unit_ids": [
+        "u1"
+      ],
+      "relation_code": "NOT_MENTIONED_BY_OTHER_REVIEWS",
+      "relation_label": "판단하기 어렵습니다"
+    }
+  ],
+  "unmentioned_aspect_status": [
+    {
+      "aspect": "화면 크기",
+      "status": "작아 보임",
+      "aspect_cluster_id": "D-A-000392",
+      "status_cluster_id": "D-S-001196",
+      "submitted_opinion_unit_ids": [
+        "u1"
+      ]
+    }
+  ],
+  "alternative_recommendations": {
+    "status": "COMPLETED",
+    "ranking_contract": {
+      "source": "submitted_negative_aspect_status_review_votes",
+      "status_match_policy": "exact_status_cluster_id_for_undesired_condition",
+      "positive_alternative_policy": "same_aspect_different_status_with_positive_dominant_sentiment",
+      "negative_evidence_strength": "support_reliability * negative_wilson_upper_95",
+      "positive_alternative_strength": "support_reliability * positive_wilson_lower_95",
+      "weakness_utility": "weighted_mean(positive_alternative_strength - negative_evidence_strength)",
+      "experience_similarity_weight": 0.25,
+      "weakness_utility_weight": 0.75,
+      "weakness_repair_score": "0.25 * experience_similarity + 0.75 * ((weakness_utility + 1) / 2)"
+    },
+    "negative_conditions": [
+      {
+        "condition_id": "condition_1",
+        "aspect": "화면 크기",
+        "status": "작아 보임",
+        "aspect_cluster_id": "D-A-000392",
+        "status_cluster_id": "D-S-001196",
+        "submitted_review_vote_count": 1,
+        "importance": 1.0,
+        "submitted_opinion_unit_ids": [
+          "u1"
+        ]
+      }
+    ],
+    "excluded_negative_conditions": [],
+    "alternatives": [
+      {
+        "product_name": "삼성전자 F27T350",
+        "catalog_review_count": 105,
+        "weakness_utility": 0.66686,
+        "experience_similarity": 0.380489,
+        "weakness_repair_score": 0.720195,
+        "evidence_coverage": 1.0,
+        "requirement_matches": [
+          {
+            "condition_id": "condition_1",
+            "aspect": "화면 크기",
+            "status": "작아 보임",
+            "relation": "POSITIVE_ALTERNATIVE_ONLY",
+            "utility": 0.66686,
+            "undesired_status_profile": null,
+            "positive_alternative_profile": {
+              "aspect": "화면 크기",
+              "status": "큼",
+              "supporting_review_count": 13,
+              "sentiment": {
+                "counts": {
+                  "positive": 12,
+                  "negative": 1,
+                  "mixed": 0,
+                  "neutral": 0,
+                  "unknown": 0
+                },
+                "shares": {
+                  "positive": 0.923077,
+                  "negative": 0.076923,
+                  "mixed": 0.0,
+                  "neutral": 0.0,
+                  "unknown": 0.0
+                },
+                "dominant_sentiment": "positive",
+                "dominant_share": 0.923077,
+                "positive_wilson_95": {
+                  "lower": 0.66686,
+                  "upper": 0.98629
+                },
+                "negative_wilson_95": {
+                  "lower": 0.01371,
+                  "upper": 0.33314
+                },
+                "normalized_entropy": 0.168499
+              }
+            },
+            "reason": "'화면 크기 작아 보임' 부정 상태 미관측; '화면 크기 큼' 긍정 근거 12개"
+          }
+        ],
+        "recommendation_reason": "'화면 크기 작아 보임' 부정 상태 미관측; '화면 크기 큼' 긍정 근거 12개",
+        "quality_codes": [
+          "NORMALIZATION_RISK_CLUSTERS_PRESENT"
+        ],
+        "rank": 1
+      },
+      {
+        "product_name": "SMART 삼성전자 M7 S32BM700",
+        "catalog_review_count": 71,
+        "weakness_utility": 0.64567,
+        "experience_similarity": 0.230365,
+        "weakness_repair_score": 0.674717,
+        "evidence_coverage": 1.0,
+        "requirement_matches": [
+          {
+            "condition_id": "condition_1",
+            "aspect": "화면 크기",
+            "status": "작아 보임",
+            "relation": "POSITIVE_ALTERNATIVE_ONLY",
+            "utility": 0.64567,
+            "undesired_status_profile": null,
+            "positive_alternative_profile": {
+              "aspect": "화면 크기",
+              "status": "큼",
+              "supporting_review_count": 7,
+              "sentiment": {
+                "counts": {
+                  "positive": 7,
+                  "negative": 0,
+                  "mixed": 0,
+                  "neutral": 0,
+                  "unknown": 0
+                },
+                "shares": {
+                  "positive": 1.0,
+                  "negative": 0.0,
+                  "mixed": 0.0,
+                  "neutral": 0.0,
+                  "unknown": 0.0
+                },
+                "dominant_sentiment": "positive",
+                "dominant_share": 1.0,
+                "positive_wilson_95": {
+                  "lower": 0.64567,
+                  "upper": 1.0
+                },
+                "negative_wilson_95": {
+                  "lower": 0.0,
+                  "upper": 0.35433
+                },
+                "normalized_entropy": 0.0
+              }
+            },
+            "reason": "'화면 크기 작아 보임' 부정 상태 미관측; '화면 크기 큼' 긍정 근거 7개"
+          }
+        ],
+        "recommendation_reason": "'화면 크기 작아 보임' 부정 상태 미관측; '화면 크기 큼' 긍정 근거 7개",
+        "quality_codes": [
+          "LOW_SHARED_SUPPORT_RELIABILITY",
+          "NORMALIZATION_RISK_CLUSTERS_PRESENT"
+        ],
+        "rank": 2
+      },
+      {
+        "product_name": "오디세이 삼성전자 G3 S27AG300",
+        "catalog_review_count": 70,
+        "weakness_utility": 0.510109,
+        "experience_similarity": 0.42517,
+        "weakness_repair_score": 0.672583,
+        "evidence_coverage": 1.0,
+        "requirement_matches": [
+          {
+            "condition_id": "condition_1",
+            "aspect": "화면 크기",
+            "status": "작아 보임",
+            "relation": "POSITIVE_ALTERNATIVE_ONLY",
+            "utility": 0.510109,
+            "undesired_status_profile": null,
+            "positive_alternative_profile": {
+              "aspect": "화면 크기",
+              "status": "큼",
+              "supporting_review_count": 4,
+              "sentiment": {
+                "counts": {
+                  "positive": 4,
+                  "negative": 0,
+                  "mixed": 0,
+                  "neutral": 0,
+                  "unknown": 0
+                },
+                "shares": {
+                  "positive": 1.0,
+                  "negative": 0.0,
+                  "mixed": 0.0,
+                  "neutral": 0.0,
+                  "unknown": 0.0
+                },
+                "dominant_sentiment": "positive",
+                "dominant_share": 1.0,
+                "positive_wilson_95": {
+                  "lower": 0.510109,
+                  "upper": 1.0
+                },
+                "negative_wilson_95": {
+                  "lower": 0.0,
+                  "upper": 0.489891
+                },
+                "normalized_entropy": 0.0
+              }
+            },
+            "reason": "'화면 크기 작아 보임' 부정 상태 미관측; '화면 크기 큼' 긍정 근거 4개"
+          }
+        ],
+        "recommendation_reason": "'화면 크기 작아 보임' 부정 상태 미관측; '화면 크기 큼' 긍정 근거 4개",
+        "quality_codes": [
+          "NORMALIZATION_RISK_CLUSTERS_PRESENT"
+        ],
+        "rank": 3
+      }
+    ]
+  }
+}

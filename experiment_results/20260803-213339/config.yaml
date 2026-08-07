@@ -1,0 +1,99 @@
+project:
+  results_root: experiment_results
+  experiment_profile: full_monitor_dataset
+  # Increment whenever normalization logic, lineage semantics, or the model snapshot changes.
+  normalization_version: "2026-08-03"
+
+inputs:
+  representative_attributes: dataset/keyboard_representative_attributes.parquet
+  opinion_units: dataset/keyboard_opinion_units.parquet
+
+filters:
+  excluded_raw_aspects:
+    - 전반적 상품 경험
+
+embedding:
+  model_id: snunlp/KR-SBERT-Medium-extended-klueNLItriplet_PARpair_QApair-klueSTS
+  local_model_path: models/snunlp--KR-SBERT-Medium-extended-klueNLItriplet_PARpair_QApair-klueSTS
+  local_files_only: true
+  batch_size: 32
+  device: auto
+  normalize_embeddings: true
+  show_progress_bar: true
+
+clustering:
+  metric: cosine
+  linkage: complete
+  distance_tolerance: 0.000001
+  experiment_b:
+    distance_threshold: 0.22
+    naming_max_distance: 0.22
+  experiment_d:
+    aspect:
+      distance_threshold: 0.3591
+      naming_max_distance: 0.3591
+    status:
+      distance_threshold: 0.20
+      naming_max_distance: 0.20
+  status_opposition_groups:
+    - side_a: [있음, 존재, 발생]
+      side_b: [없음, 부재, 미발생]
+    - side_a: [좋음, 만족, 우수함]
+      side_b: [나쁨, 불만, 불량]
+    - side_a: [빠름, 신속함]
+      side_b: [느림, 지연]
+    - side_a: [가벼움]
+      side_b: [무거움]
+    - side_a: [높음]
+      side_b: [낮음]
+    - side_a: [밝음]
+      side_b: [어두움]
+    - side_a: [큼]
+      side_b: [작음]
+    - side_a: [편리함]
+      side_b: [불편함]
+  status_opposition_suffix_pairs:
+    - side_a_suffix: 있음
+      side_b_suffix: 없음
+    - side_a_suffix: 발생
+      side_b_suffix: 미발생
+  status_explicit_negation:
+    enabled: true
+    suffixes: [지 않음, 아님]
+    whole_word_tokens: [안, 못]
+    core_similarity_threshold: 0.65
+
+canonical_label:
+  centrality_weight_alpha: 0.70
+  min_canonical_review_count: 1
+  min_score_margin: 0.0
+  candidate_count:
+    size_1: 1
+    size_2: 2
+    size_3_to_9: 3
+    size_10_plus: 5
+  role_filters:
+    aspect_disallowed_exact:
+      - 좋음
+      - 나쁨
+      - 만족
+      - 불만
+      - 추천
+      - 아쉬움
+      - 긍정
+      - 부정
+      - 중립
+    status_disallowed_exact: []
+    exclude_status_matching_aspect: true
+
+output:
+  parquet_compression: zstd
+
+evaluation:
+  enabled: true
+  nearest_cluster_pair_limit: 50
+  risky_cluster_limit_per_stage: 10
+  user_evaluation:
+    # The same N and seed are applied independently to review and cluster tasks.
+    task_count: 100
+    random_seed: 17171771

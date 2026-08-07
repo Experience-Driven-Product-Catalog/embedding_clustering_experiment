@@ -1,0 +1,184 @@
+{
+  "created_at_local": "2026-08-03T21:34:00.803380+09:00",
+  "scope": "full_input_datasets",
+  "sampling_used": false,
+  "python": "3.12.10 (main, Apr  9 2025, 03:49:38) [Clang 20.1.0 ]",
+  "platform": "macOS-26.5-arm64-arm-64bit",
+  "experiment_profile": "full_monitor_dataset",
+  "inputs": {
+    "representative_attributes": {
+      "path": "/Users/jaewone/Downloads/embedding_clustering_experiment/dataset/monitor_representative_attributes.parquet",
+      "sha256": "3882694e3443640d47c37c5daf5f609a778aad31c71c302f3aaea61b0b5adb7e",
+      "rows": 2352,
+      "unique_reviews": 748
+    },
+    "opinion_units": {
+      "path": "/Users/jaewone/Downloads/embedding_clustering_experiment/dataset/monitor_opinion_units.parquet",
+      "sha256": "75eb7e63c8f00714c97c4f497f2058e37b4be0d623df9aa873cb66e0fab71738",
+      "rows": 2583,
+      "eligible_rows": 2401,
+      "excluded_rows": 182,
+      "unique_reviews": 748
+    }
+  },
+  "embedding": {
+    "model_id": "snunlp/KR-SBERT-Medium-extended-klueNLItriplet_PARpair_QApair-klueSTS",
+    "local_model_path": "/Users/jaewone/Downloads/embedding_clustering_experiment/models/snunlp--KR-SBERT-Medium-extended-klueNLItriplet_PARpair_QApair-klueSTS",
+    "device": "mps",
+    "batch_size": 32,
+    "cached_expression_count": 1850
+  },
+  "normalization": {
+    "embedding_model_id": "snunlp/KR-SBERT-Medium-extended-klueNLItriplet_PARpair_QApair-klueSTS",
+    "normalization_version": "2026-08-03",
+    "normalization_run_id": "20260803-213339",
+    "normalization_config_sha256": "d9f2bec666c2691d24b56b0205191396a7da1a63e632ef59c29975230f44f232",
+    "mapping_distance_metric": "cosine",
+    "lineage_result_tables": [
+      "experiment_b",
+      "experiment_d"
+    ],
+    "baseline_result_tables": [
+      "experiment_a",
+      "experiment_c"
+    ]
+  },
+  "automatic_evaluation": {
+    "scope": "full_input_datasets",
+    "sampling_used": false,
+    "integrity_check_count": 38,
+    "integrity_checks_passed": 38,
+    "representative_row_count": 2352,
+    "opinion_row_count": 2583,
+    "eligible_opinion_row_count": 2401,
+    "common_review_count": 748,
+    "user_evaluation_task_count": 100,
+    "cluster_evaluation_task_count": 100,
+    "user_evaluation_random_seed": 17171771,
+    "user_evaluation_sampling_used": true,
+    "user_evaluation_completed": false
+  },
+  "package_versions": {
+    "numpy": "2.5.1",
+    "pandas": "3.0.5",
+    "pyarrow": "25.0.0",
+    "PyYAML": "6.0.3",
+    "scikit-learn": "1.9.0",
+    "sentence-transformers": "5.6.1",
+    "torch": "2.13.0"
+  },
+  "artifacts": {
+    "clustering/experiment_a_inventory.parquet": {
+      "sha256": "f55036862b38ca04231dc3cbe17f58553d87de55ff1ed0581fb1532c17a47d0b",
+      "bytes": 8468
+    },
+    "clustering/experiment_b_clusters.parquet": {
+      "sha256": "ecf8cbac2bc0c0ab40a779a5ff14273eff7dfae87c91cca9cb3831d94f8a01b5",
+      "bytes": 4135625
+    },
+    "clustering/experiment_b_nodes.parquet": {
+      "sha256": "4c349aa926b130a130808301f3e2d91fdd23bd4a61405493d0f9858ebed474ed",
+      "bytes": 2783588
+    },
+    "clustering/experiment_c_inventory.parquet": {
+      "sha256": "7d7e7215f94faeafc1f67f3c6e71fbcedcd00c273c3eaa6758a78cfd21f3c606",
+      "bytes": 20321
+    },
+    "clustering/experiment_d_aspect_clusters.parquet": {
+      "sha256": "1ddb36e5ffc80814f6a423c2f282578005d6a696dcec6fc60988884f0d50cd1b",
+      "bytes": 3780228
+    },
+    "clustering/experiment_d_aspect_nodes.parquet": {
+      "sha256": "8a8411b8e31e1e0eda67ca03a2e3749d7922b3ad82cb9d7b436b0d32c13fd6e0",
+      "bytes": 3656288
+    },
+    "clustering/experiment_d_status_clusters.parquet": {
+      "sha256": "19b626649e2dccfbe708b1a0fe595bc067c308315cd56c4a54b83c44ce8d4c4a",
+      "bytes": 9906058
+    },
+    "clustering/experiment_d_status_nodes.parquet": {
+      "sha256": "557fa5769c5ae5cbbe49617cc0f4d7b803f7e636ec54f0643af3f0d2327d1b66",
+      "bytes": 5356818
+    },
+    "config.yaml": {
+      "sha256": "8d0877dfeddbfbd04bdf246c0be54a1eecba2c917cf8a5e56b627e70ea29fd5f",
+      "bytes": 2584
+    },
+    "evaluation/automatic_evaluation_summary.json": {
+      "sha256": "7902c6e37d28c523853ad53e59e114a5694c903ff1c4d80d90be439da90bef1f",
+      "bytes": 459
+    },
+    "evaluation/cluster_evaluation_tasks.parquet": {
+      "sha256": "873c312e3d813da7051c7e8640729426f51a2b1c44a0f47a9e7889e2550673b4",
+      "bytes": 9020
+    },
+    "evaluation/cluster_node_quality.parquet": {
+      "sha256": "4e92a53b13d2201429c68add6db4402379cf42ea9a7f1608c35bd5327207ae36",
+      "bytes": 47268
+    },
+    "evaluation/cluster_quality.parquet": {
+      "sha256": "6f26f7601afae7680ac5e57ac870a7b9321998fd7809599b833f2d03f316bdcf",
+      "bytes": 16789094
+    },
+    "evaluation/cluster_stage_metrics.parquet": {
+      "sha256": "f25884bdf8a0d1b1a4cdf79f8acb0ad0636044895b56615c1acacd961e15e496",
+      "bytes": 12745
+    },
+    "evaluation/data_integrity_checks.parquet": {
+      "sha256": "7fc7330db8a6d8660319a8dc8b7f5a691e21c57a4320d93c204f2dc282008da0",
+      "bytes": 3316
+    },
+    "evaluation/experiment_metrics.parquet": {
+      "sha256": "b984d02dfe1e493a96c8e1f2840172a85f3d283ca79d1d119e7e78f7b3dd2ac7",
+      "bytes": 13788
+    },
+    "evaluation/factorial_effects.parquet": {
+      "sha256": "8f67931123a3a5ccfd9234d27d5ccde51906be62dc8a762e101e17b7ac7e2fd1",
+      "bytes": 3118
+    },
+    "evaluation/nearest_cluster_pairs.parquet": {
+      "sha256": "79340d216194cf5b4422337abfd72c4239c359b37a9cdcf0679f733d76a1a483",
+      "bytes": 9306
+    },
+    "evaluation/paired_experiment_metrics.parquet": {
+      "sha256": "b984d02dfe1e493a96c8e1f2840172a85f3d283ca79d1d119e7e78f7b3dd2ac7",
+      "bytes": 13788
+    },
+    "evaluation/review_cohort_summary.parquet": {
+      "sha256": "df146af726da663887b9d3221c6099e6c55c038d79f470833065a694e6332188",
+      "bytes": 4514
+    },
+    "evaluation/review_normalization_changes.parquet": {
+      "sha256": "ae2570257ec69db47d813fe62e9794602b6eee2f84038da1c1e2f31e8d3eb8b7",
+      "bytes": 4227
+    },
+    "evaluation/risky_clusters.parquet": {
+      "sha256": "41d383e7aec4a0938a0d19e1d5749d89d99cef771f810ab39d0ebab98cf88ed4",
+      "bytes": 320960
+    },
+    "evaluation/user_evaluation_tasks.parquet": {
+      "sha256": "8cd9677dc1db742b65dff73c566012f59180af43e020aeb93a3fc8e7bd2c2afb",
+      "bytes": 16004
+    },
+    "experiment.log": {
+      "sha256": "986b6b902a07ae84f6a5dbda795e70668e76b5127a16c74e0fe7f0848c0e2311",
+      "bytes": 1353
+    },
+    "results/experiment_a.parquet": {
+      "sha256": "83e36fcd83971c432393696e29aa6ce3ae28ac961e37f8d23d7ddbe59245f9d0",
+      "bytes": 29067
+    },
+    "results/experiment_b.parquet": {
+      "sha256": "c75170e6d15d1cd748b2835cb090aea4b959dce69c69c3b8616d859836d95b0d",
+      "bytes": 39040
+    },
+    "results/experiment_c.parquet": {
+      "sha256": "fe8b2fccfca2e45153e4b2b4102b0bcf88b08d6fcd3da63f0436240bab0e6139",
+      "bytes": 150573
+    },
+    "results/experiment_d.parquet": {
+      "sha256": "126c65238f055434541458b1c44f5323707bce16deb1b87581d580550e4d493b",
+      "bytes": 170140
+    }
+  }
+}
