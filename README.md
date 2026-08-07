@@ -100,9 +100,10 @@
 
 #### 정성적 평가(사용자 평가)
 
-| 리뷰 수준 평가                 | 군집 수준(정규화 품질) 평가         |
-| ------------------------ | ------------------------ |
-| ![](https://github.com/Experience-Driven-Product-Catalog/embedding_clustering_experiment/blob/main/assets/LEVIT%20%EC%8B%A4%ED%97%98-1.png?raw=true) | ![](https://github.com/Experience-Driven-Product-Catalog/embedding_clustering_experiment/blob/main/assets/LEVIT%20%EC%8B%A4%ED%97%98-2.png?raw=true) |
+<div align="center">
+  <img src="./assets/LEVIT 실험-1.png" width="49%" />
+  <img src="./assets/LEVIT 실험-2.png" width="49%" />
+</div>
 
 리뷰에서 유효한 속성을 적절하게 추출하였는지, 그리고 정규화된 군집과 대표명이 의미적으로 적절한지를 확인하기 위해 사용자 블라인드 테스트를 수행합니다.
 
